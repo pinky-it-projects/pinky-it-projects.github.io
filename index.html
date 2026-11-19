@@ -2,128 +2,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT Portfolio | Pinky</title>
+  <style>
+    :root {
+      --navy: #172b4d;
+      --blue: #2563eb;
+      --light: #f4f7fb;
+      --text: #334155;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--light);
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 55px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 36px; }
+    header p { margin: 12px auto; max-width: 650px; }
+    nav {
+      background: #10203a;
+      text-align: center;
+      padding: 14px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      display: inline-block;
+    }
+    nav a:hover { text-decoration: underline; }
+    main {
+      max-width: 950px;
+      margin: 35px auto;
+      padding: 0 18px;
+    }
+    section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: var(--navy);
+      border-bottom: 2px solid #dbeafe;
+      padding-bottom: 10px;
+    }
+    h3 { color: var(--navy); margin-bottom: 4px; }
+    .muted { color: #64748b; margin-top: 0; }
+    .skills span {
+      display: inline-block;
+      background: #e8f0ff;
+      color: #1e40af;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .project {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    a { color: var(--blue); }
+    footer {
+      text-align: center;
+      background: var(--navy);
+      color: white;
+      padding: 20px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 28px; }
+      section { padding: 20px; }
+      nav a { margin: 5px 8px; }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-<p>IT Student | Research and Data Quality Background</p>
 
-    <h2>About Me</h2>
-    <p>
-        I am currently studying System and Network Administration
-at Odisee in Belgium. I have a background in research,
-data collection, and quality control, and I also completed
-postgraduate studies in Project Management at Sheridan
-College in Canada.
-</p>
+<header>
+  <h1>Welcome to My IT Portfolio</h1>
+  <p>System and Network Administration Student</p>
+  <p>Learning IT | Background in Research and Data Quality</p>
+</header>
 
-    <h2>Professional Background</h2>
-    <p>
-I worked on research and survey projects in Nepal,
-starting as a Field Enumerator and later taking on
-supervisory and Quality Control (QC) responsibilities.
-My work included data collection, checking survey
-responses, and supporting field research teams.
-</p>
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#research">Research</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <h2>Education</h2>
+<main>
 
-<h3>System and Network Administration</h3>
-<p>
-Odisee, Belgium — Currently studying
-</p>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am currently studying System and Network Administration
+    at Odisee in Belgium. I am learning Python, Linux,
+    networking and data analytics through coursework
+    and practical exercises.
+  </p>
+  <p>
+    Before starting my IT studies, I gained experience
+    in field research, survey data collection and quality
+    control in Nepal. I also completed postgraduate
+    studies in Project Management in Canada.
+  </p>
+  <div class="skills">
+    <span>Python Fundamentals</span>
+    <span>Linux Basics</span>
+    <span>Networking Fundamentals</span>
+    <span>Excel Learning</span>
+    <span>Research & Data Quality</span>
+  </div>
+</section>
 
-<h3>Ontario College Graduate Certificate in Project Management</h3>
-<p>
-Sheridan College, Mississauga, Canada — 2024
-</p>
+<section id="experience">
+  <h2>Professional Background</h2>
+  <h3>Field Research and Quality Control</h3>
+  <p class="muted">New ERA, Nepal | Project-based assignments</p>
+  <p>
+    I worked on research and survey projects, beginning
+    as a field enumerator and later taking on supervisory
+    and quality control responsibilities.
+    My work involved collecting survey data, checking
+    responses, verifying information and supporting
+    field research teams.
+  </p>
+</section>
 
-<h3>Master of Arts in Rural Development</h3>
-<p>
-Tribhuvan University, Nepal — 2020
-</p>
+<section id="education">
+  <h2>Education</h2>
 
-<h3>Bachelor of Arts in Humanities and Social Sciences</h3>
-<p>
-Tribhuvan University, Nepal — 2017
-</p>
-    <h2>Academic Research</h2>
+  <h3>Graduaat in System and Network Administration</h3>
+  <p class="muted">Odisee, Belgium | Currently studying</p>
 
-<h3>Master's Thesis - Rural Development (2020)</h3>
+  <h3>Postgraduate Certificate in Project Management</h3>
+  <p class="muted">
+    Sheridan College, Hazel McCallion Campus,
+    Mississauga, Canada | 2024
+  </p>
 
-<p>
-Impact Analysis of Nagarkot Community Homestay
-of Changunarayan Municipality, Nepal.
-</p>
+  <h3>Master of Arts in Rural Development</h3>
+  <p class="muted">Tribhuvan University, Nepal | 2021</p>
 
-<p>
-For my master's thesis at Tribhuvan University,
-I studied the economic, social, and cultural
-impacts of community homestay tourism.
-</p>
+  <h3>Bachelor of Arts in Humanities and Social Sciences</h3>
+  <p class="muted">Tribhuvan University, Nepal | 2017</p>
+</section>
 
-<p>
-The research involved 120 respondents and used
-household surveys, field observation, and
-key informant interviews. I used SPSS 23
-for data analysis.
-</p>
-    <h2>My Projects</h2>
-    <p>
-        <h2>My IT Projects</h2>
+<section id="research">
+  <h2>Academic Research</h2>
+  <h3>Impact Analysis of Nagarkot Community Homestay</h3>
+  <p class="muted">Master's Thesis | Tribhuvan University | 2020</p>
+  <p>
+    For my master's thesis, I studied the economic,
+    social and cultural impacts of community homestay
+    tourism in Nagarkot, Nepal.
+  </p>
+  <p>
+    The research involved 120 respondents and used
+    household surveys, field observation and key
+    informant interviews. I used SPSS 23 for data analysis.
+  </p>
+</section>
 
-<h3>1. QR Code Generator - Python</h3>
-<p>
-A beginner Python project that generates a QR code
-from a website address.
-</p>
-<p>
-<a href="https://github.com/pinky-it-projects/qr-code-generator">
-View Project on GitHub
-</a>
-</p>
+<section id="projects">
+  <h2>My IT Learning Projects</h2>
+  <div class="project-grid">
 
-<h3>2. Server Log Analyzer - Python</h3>
-<p>
-A Python project for analyzing server log files
-and identifying error messages.
-</p>
-<p>
-<a href="https://github.com/pinky-it-projects/server-log-analyzer">
-View Project on GitHub
-</a>
-</p>
+    <div class="project">
+      <h3>QR Code Generator</h3>
+      <p>
+        A beginner Python project that creates a QR code
+        from a website address.
+      </p>
+      <a href="https://github.com/pinky-it-projects/qr-code-generator">
+        View on GitHub
+      </a>
+    </div>
 
-<h3>3. Bicycle Sales Analysis - Excel</h3>
-<p>
-A beginner data analysis exercise using Excel,
-completed as part of my data analytics learning.
-</p>
-<p>
-<a href="https://github.com/pinky-it-projects/bicycle-sales-analysis">
-View Project on GitHub
-</a>
-</p>
-    </p>
-    <h2>Contact</h2>
+    <div class="project">
+      <h3>Server Log Analyzer</h3>
+      <p>
+        A Python learning project for reading log files
+        and identifying error messages.
+      </p>
+      <a href="https://github.com/pinky-it-projects/server-log-analyzer">
+        View on GitHub
+      </a>
+    </div>
 
-<p>
-You can explore my learning projects
-and professional background here.
-</p>
+    <div class="project">
+      <h3>Bicycle Sales Analysis</h3>
+      <p>
+        An Excel data analysis exercise completed
+        as part of my learning.
+      </p>
+      <a href="https://github.com/pinky-it-projects/bicycle-sales-analysis">
+        View on GitHub
+      </a>
+    </div>
 
-<p>
-<a href="https://github.com/pinky-it-projects">
-My GitHub Profile
-</a>
-</p>
+  </div>
+</section>
 
-<p>
-<a href="https://www.linkedin.com/in/pinky-shrestha/">
-My LinkedIn Profile
-</a>
-</p>
+<section id="contact">
+  <h2>Contact & Profiles</h2>
+  <p>
+    <a href="https://github.com/pinky-it-projects">
+      GitHub Profile
+    </a>
+  </p>
+  <p>
+    <a href="https://www.linkedin.com/in/pinky-shrestha/">
+      LinkedIn Profile
+    </a>
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p>My IT Learning Portfolio</p>
+</footer>
+
 </body>
 </html>
